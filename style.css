@@ -2,10 +2,38 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
 }
 
-.fullscreenBtn {
-  opacity: 10%;
+.shutterBtn {
+  background-color: white;
+  border : black solid;
+  border-radius : 50%;
+}
+
+.autoBtn {
+  background-color: black;
+  opacity: 35%;
+  border-radius : 50%;
+  border: none;
+  
+  color: #ff9900;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  
+}
+
+.poseBtn {
+  background-color: #242424;
+  border-radius : 8px;
+  border: none;
+  
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  
+  
 }
