@@ -28,3 +28,7 @@ function draw() {
 function triggerFullscreen() {
   fullscreen(true);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
