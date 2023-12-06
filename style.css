@@ -5,7 +5,7 @@ html, body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  teound-color: #000000;
+  background-color: #000000;
 }
 
 canvas {
@@ -19,12 +19,12 @@ canvas {
   color: #ff9900;
   border: none;
   border-radius: 50%;
-  font-size: 16px;
-  width: 50px;
-  height: 50px;
+  font-size: 24px;
+  width: 100px; /*50*/
+  height: 100px; /*50*/
   text-align: center;
   line-height: 50px;
-  bottom: 30vh; /* 5% 아래로 조정 */
+  bottom: 20vh; /* 5% 아래로 조정 */
   right: 2vw; /* 2% 오른쪽으로 조정 */
   display: flex;
   justify-content: center;
@@ -40,20 +40,21 @@ canvas {
   background-color: #000;
   border: 4px solid white;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
 }
 
 #poseBtn {
   position: absolute;
   bottom: 7vh; /* 7% 아래로 조정 */
   left: 75%;
-  width: 70px;
-  height: 70px;
+  width: 130px;
+  height: 130px;
   background-color: #747474;
   color: #fff;
+  border: none;
   border-radius: 20%;
-  font-size: 16px;
+  font-size: 32px;
   text-align: center;
 }
 

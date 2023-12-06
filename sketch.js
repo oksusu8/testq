@@ -44,15 +44,15 @@ function setup() {
 }
 
 function draw() {
-  image(video, 0, height * 0.08);
+  image(video, 0, height * 0.04);
 }
 
 function layoutDraw() {
   fill(255);
   noStroke();
-  rect(0, 0, width, height * 0.08);
+  rect(0, 0, width, height * 0.04);
 
   fill(0);
   noStroke();
-  rect(0, height * 0.73, width, height * 0.27);
+  rect(0, height * 0.7, width, height * 0.3);
 }
