@@ -1,39 +1,111 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    /*background-color: #000000;*/
 }
+  
+  #camera-container {
+    position: relative;
+    /*추가 항목*/
+    width: 100%; 
+    height: 66vh;
+  }
+  
+  video {
+    /*추가 항목*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #autoBtn {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ff9900;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    /*추가*/
+    width: 50px; height: 50px;
+    text-align: center;
+    /*line-height: 50px; /*16px에서 수정*/
+    bottom: 240px; right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
 
-canvas {
-  display: block;
-}
+  }
+  
+  #bottom-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #captureBtn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 
-.shutterBtn {
-  background-color: white;
-  border : black solid;
-  border-radius : 50%;
-}
+    padding: 10px 20px;
+    background-color: #000;
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 90px; height: 90px;
 
-.autoBtn {
-  background-color: black;
-  opacity: 35%;
-  border-radius : 50%;
-  border: none;
-  
-  color: #ff9900;
-  text-align: center;
-  justify-content: center;
-  font-size: 25px;
-  
-}
+  }
 
-.poseBtn {
-  background-color: #242424;
-  border-radius : 8px;
-  border: none;
+#menuBtn {
+    position: absolute;
+    bottom: 70px;
+    left: 75%;
+
+    width: 70px; height: 70px;
+    
+    background-color: #747474;
+    color: #fff;
+    border-radius: 20%;
+    font-size: 16px;
+
+    text-align: center;
+  }
   
-  font-size: 32px;
-  color: white;
-  text-align: center;
+  #menu {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    border: 3px solid blue;
+    padding: 10px;
+  }
   
+  #menuBtn:hover + #menu, #menu:hover {
+    display: block;
+  }
   
-}
+  #menu button {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  canvas {
+    border: 2px solid #000;
+  }
+  

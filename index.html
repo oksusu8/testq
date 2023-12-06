@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 
   </head>
   <body>
-    <main>
-    </main>
+    <div id="camera-container"> <!-- 중간 카메라 라인 -->
+      <!-- p5.js canvas will be inserted here -->
+    </div>
+    <button id="autoBtn">Auto</button>
+    
+  
+    <div id="bottom-container"> <!-- 밑 버튼 라인 -->
+      <button id="captureBtn"></button>
+      <button id="menuBtn">POSE</button>
+      <div id="menu">
+        <button id="menuItem1">Item 1</button>
+        <button id="menuItem2">Item 2</button>
+        <button id="menuItem3">Item 3</button>
+      </div>
+    </div>
     <script src="sketch.js"></script>
   </body>
 </html>
