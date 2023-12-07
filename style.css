@@ -58,4 +58,17 @@ canvas {
   text-align: center;
 }
 
+#screenBtn {
+  position: absolute;
+  bottom: 7vh; /* 7% 아래로 조정 */
+  left: 10%;
+  width: 130px;
+  height: 130px;
+  background-color: #747474;
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  font-size: 32px;
+  text-align: center;
+}
 

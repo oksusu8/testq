@@ -10,7 +10,6 @@ let isVisible = true;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  fullscreen(true);
   buttonX = width / 2;
   buttonY = height / 2;
 
@@ -24,6 +23,8 @@ function setup() {
   let autoBtn = select('#autoBtn');
   let captureBtn = select('#captureBtn');
   let poseBtn = select('#poseBtn');
+  let screenBtn = select('#screenBtn');
+  //screenBtn.mousePressed(toggleFullscreen);
   
   /*
   shutterBtn = createButton('');
@@ -58,5 +59,9 @@ function layoutDraw() {
   rect(0, height * 0.7, width, height * 0.3);
 }
 
+function toggleFullscreen() {
+    let fs = fullscreen();
+    fullscreen(!fs);
+}
 
 
