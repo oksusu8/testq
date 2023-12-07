@@ -56,3 +56,9 @@ function layoutDraw() {
   noStroke();
   rect(0, height * 0.7, width, height * 0.3);
 }
+
+function mousePressed() {
+    // 마우스 클릭 시 전체 화면으로 전환합니다.
+    let fs = fullscreen();
+    fullscreen(!fs);
+}
